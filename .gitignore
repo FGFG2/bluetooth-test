@@ -1,0 +1,11 @@
+#Folders
+/.gradle
+/.idea
+/build
+/captures
+
+#Files
+/gradle.properties
+/local.properties
+*.iml
+*.log

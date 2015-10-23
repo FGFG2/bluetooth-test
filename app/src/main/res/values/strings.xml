@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FGFG-Test</string>
+
+    <string name="title_sectionBluetooth">Bluetooth</string>
+    <string name="title_sectionWebservice">Webservice</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_test_all">Test all</string>
+
+    <string name="action_connect">Connect</string>
+</resources>

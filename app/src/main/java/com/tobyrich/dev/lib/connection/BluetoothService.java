@@ -137,8 +137,11 @@ public class BluetoothService extends Service implements BluetoothAdapter.LeScan
     };
     @Override
     public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
-        Log.d(TAG, "scan-found: " + device.getName()+ " - " +device.getAddress()+ " @ " + rssi);
-        mDevices.add(device);
+        if(device.getName() != null && device.getName().contains("TobyRich")) {
+            mDevices.add(device);
+            Log.d(TAG, "scan-found-toby: " + device.getName() + " - " + device.getAddress() + " @ " + rssi);
+        }else
+            Log.d(TAG, "scan-found: " + device.getName() + " - " + device.getAddress() + " @ " + rssi);
     }
 
     private void startScan(){
